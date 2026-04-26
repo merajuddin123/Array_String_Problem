@@ -1,0 +1,24 @@
+// first non repeating character in String
+
+
+class Main {
+    public static void main(String[] args) {
+      String str= "shashank";
+      int j;
+      for(int i=0; i<str.length();i++)
+      {
+          for(j=0; j<str.length(); j++)
+            {
+                if(i!=j && str.charAt(i)==str.charAt(j))
+                break;
+                
+            }
+            
+            if(j==str.length())
+           { System.out.println(str.charAt(i));
+            break;}
+      }
+      
+     
+    }
+}
